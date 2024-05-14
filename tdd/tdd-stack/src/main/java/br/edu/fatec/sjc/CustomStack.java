@@ -2,7 +2,6 @@ package br.edu.fatec.sjc;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Stack;
 
 public class CustomStack<T extends  Number> {
     private final Integer limit;
@@ -42,4 +41,13 @@ public class CustomStack<T extends  Number> {
     public int size() {
         return this.elements.size();
     }
+
+    public List<T> getElements() {
+        return elements;
+    }
+
+    public void setElements(List<T> elements) {
+        this.elements = elements;
+    }
+
 }
